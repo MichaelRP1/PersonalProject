@@ -1,4 +1,98 @@
+body { 
+    /* Reset Margin and Padding to Default for Some Browsers */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav {
+    /* Setting Navigation Color to be in Contrast with Rest of Page */
+    background-color: rgb(47, 47, 47); /* #2f2f2f */
+    display: flex; /* Allows Navigation Bar to Stretch to Fit Links */
+    justify-content: center; /* Moves to the center, more asthetically pleasing */
+}
+nav a {
+    /* Setting Color (Contrast with Navbar) and Removing Bar from Links */
+    color: #f2f2f2; /* Slightly Offwhite */
+    text-align: center; /* Centers text in padded space */
+    text-decoration: none; /* Removes Bar */
+    text-transform: uppercase; /* Makes it more appealing for navbar */
+    padding: 15px 20px; /* Seperates the links from each other */
+    font-weight: bold; /* Bolds the Text to make it more appealing */
+}
+nav a:hover {
+    /* What happens when you hover over the link */
+    /* So that you know when you are hovering over the link better */
+    background-color: #f2f2f2; /* Slightly Offwhite */
+    color: rgb(47, 47, 47); /* #2f2f2f */
+}
+#menu {
+    /* What happens to the checkbox */
+    display: none; /* Makes the checkbox dissapear */
+}
+.menu {
+    /* Menu button */
+    background-color: rgb(47, 47, 47); /* Makes the label background match nav area */
+    border-bottom: 2px solid #f2f2f2; /* A border to seperate the menu button and the nav links */
+    color: #f2f2f2; /* Makes the text color the same */
+    padding: 10px; /* Makes it more vusually appealing */
+    display: flex; /* Makes it easily manuverable */
+    justify-content: flex-start; /* Makes sure the button is on the left side of the screen */
+}
+.menu label {
+    /* Makes button in label */
+    background-color: rgb(47, 47, 47); /* Makes sure the color of the button is the same as the background */
+    /* Makes the width and height the same (square) */
+    width: 40px;
+    height: 40px;
+    color: #f2f2f2; /* Makes the text able to be seen */
+    cursor: pointer; /* Makes it seem like a link */
+    display: flex; /* Makes it esier to style */
+    flex-direction: column; /* Makes the hamburgers appear in a column */
+    /* Puts everything inside label in center */
+    justify-content: center;
+    align-items: center;
+}
+.menu label span {
+    /* Makes a part of the hamburger menu */
+    background-color: #f2f2f2; /* Sets the color for the hamburger menu button */
+    height: 3px; /* Sets the height for the item */
+    width: 100%;
+    margin: 5px 0px; /* Makes the rest of the buttons */
+}
+.menu {
+    display: none; /* Makes the menu dissapear in desktop mode */ 
+}
+@media screen and (max-width: 850px) {
+    /* What happens (mostly on mobile devices) when screen is 850 pixels or smaller (width) */
+    /* Makes dropdown menu */
+    nav {
+        flex-direction: column; /* Makes the links display vertically */
+        transform: scale(1,0); /* makes the links invisible by default (not checked), used for transitions */
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;/* Transition for navbar */
+    }
+    #menu:checked + nav{
+        /* What happens to the nav when the button is checked in mobile view */
+        transform: scale(1,1); /* Makes the links appear */
+    }
+    .menu {
+        display: flex; /* Makes the menu appear */
+    }
+    nav a {
+        opacity: 0; /* Used for transition to stop links from compressing */
+        transition: opacity 150ms ease-in-out; /* Transition for links to stop them from looking compressed when opening */
+    }
+    #menu:checked + nav a {
+        opacity: 1; /* Used in conjunction with nav a for transitions */
+        transition: opacity 250ms ease-in-out 250ms; /* Transition for links to stop them from looking compressed when closing */
+    }
+}
+article p {
+    /* Main text content */
+    text-align: justify; /* Allows text to fill the entire width of the screen */
+    margin: 10px; /* Makes the text not directly on the sides of the screen or other paragraphs*/
+}
 .footerp {
-    text-align: center;
-    font-size: 16px;
+    text-align: center; /* Alligns the text at the center of the page */
+    font-size: 16px; /* Sets the font size that is used in the footer */
 }
