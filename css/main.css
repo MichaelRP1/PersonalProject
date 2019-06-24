@@ -1,14 +1,20 @@
+/* CSS Document for Find-A-Vet PBC. For Educational Purposes Only. */
+
+/* Imports Google Fonts Text (Work Sans) with CSS */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
 body { 
     /* Reset Margin and Padding to Default for Some Browsers */
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 nav {
     /* Setting Navigation Color to be in Contrast with Rest of Page */
     background-color: rgb(47, 47, 47); /* #2f2f2f */
     display: flex; /* Allows Navigation Bar to Stretch to Fit Links */
     justify-content: center; /* Moves to the center, more asthetically pleasing */
+    font-family: 'Work Sans', sans-serif; /* Sets Font for Nav Buttons */
 }
 nav a {
     /* Setting Color (Contrast with Navbar) and Removing Bar from Links */
@@ -94,5 +100,8 @@ article p {
 }
 .footerp {
     text-align: center; /* Alligns the text at the center of the page */
-    font-size: 16px; /* Sets the font size that is used in the footer */
+    font-size: 14px; /* Sets the font size that is used in the footer, Only small enough to be seen */
+}
+footer {
+    font-family: 'Work Sans', sans-serif; /* Sets font type for entire footer */
 }
