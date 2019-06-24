@@ -101,7 +101,14 @@ article p {
 .footerp {
     text-align: center; /* Alligns the text at the center of the page */
     font-size: 14px; /* Sets the font size that is used in the footer, Only small enough to be seen */
+    background-color: rgb(47, 47, 47); /* Sets background color of footer to be the same as nav */
+    color: #f2f2f2; /* Because of background color, allows text in footer to be seen and match with nav */
+    padding: 4px; /* Makes background color for footer not extend above footer */
+}
+footer .footerp a {
+    color: #f2f2f2; /* Sets color of footer links to match rest of footer */
 }
 footer {
     font-family: 'Work Sans', sans-serif; /* Sets font type for entire footer */
+    padding-top: 10px; /* Spaces Footer from Content */
 }
