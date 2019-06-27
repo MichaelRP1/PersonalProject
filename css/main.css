@@ -95,8 +95,7 @@ nav a:hover {
 }
 article p {
     /* Main text content */
-    text-align: justify; /* Allows text to fill the entire width of the screen */
-    margin: 10px; /* Makes the text not directly on the sides of the screen or other paragraphs*/
+    margin: 10px; /* Makes the text not directly on the sides of the screen or other paragraphs **for the paragraphs** */
 }
 .footerp {
     text-align: center; /* Alligns the text at the center of the page */
@@ -111,4 +110,8 @@ footer .footerp a {
 footer {
     font-family: 'Work Sans', sans-serif; /* Sets font type for entire footer */
     padding-top: 10px; /* Spaces Footer from Content */
+}
+article {
+    font-family: 'Work Sans', sans-serif; /* Sets font type for entire content section */
+    text-align: justify; /* Allows text to fill the entire width of the screen */
 }
