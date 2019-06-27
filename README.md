@@ -11,7 +11,7 @@ I am a student that is required to participate in the **International Baccalaure
 ## Personal Project Final Idea / Proposal **(Approved)**
 - **Idea 4**: Make a website using primarily, or only, HTML, CSS, and PHP
 
-Make a website, using primarily HTML 5, CSS 3, and PHP, with advanced tools in HTML and CSS, such as CSS grids, grid area and more that would make the website look better than another made with using the default header, nav, article, section, and footer tags present in HTML 5.  An instructional video for beginner to intermediate web developers would be made to present these ideas and how to use them in the developing of a website.  At this point, the target audience would be middle or high school children who would like supplements for a Computer Science Web Development course that they might be taking in school; for example, the CIW Site Development Associate or CIW Web Foundations Associate, which I also happen to have received the certifications for those courses.
+Make a website, using primarily HTML 5, CSS 3, and PHP, with advanced tools in HTML and CSS, which I would learn through this process in the project.  The website will consist of a way for residents of PBC to find a vet for their pet, mainly a dog or cat, with the use of a databse.
 ## Personal Project Supervisor
 Will be done through ManageBac for the time being
 ## Credit
