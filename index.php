@@ -1,3 +1,5 @@
+<?php // PHP Scripting (Database Stuff)
+?>
 <!DOCTYPE html>
 <html>
     <head>

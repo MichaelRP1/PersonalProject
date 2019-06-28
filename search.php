@@ -1,7 +1,9 @@
+<?php // PHP Scripting (Database Stuff)
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About | FindAVet PBC</title>
+        <title>Search | FindAVet PBC</title>
         <!--Sets Meta Tags for SEO (later)-->
         <meta charset="UTF-8">
         <meta name="description" content="FindAVet PBC">
@@ -17,7 +19,7 @@
             <div class="menu"> <!--Makes it easily styleable-->
                 <!--Also clickable, can discard checkbox and make menu with this-->
                 <label for="menu">
-                    <!--For the buttons-->
+                    <!--For the hamburger menu-->
                     <span></span>
                     <span></span>
                     <span></span>
@@ -27,19 +29,19 @@
             <nav>
                 <!--Actual Links for Navigation-->
                 <a href="index.html">Home</a>
-                <a href="search.html">Search</a>
-                <a href="#">About</a> <!--Makes Navigation Faster to Same Page-->
+                <a href="#">Search</a> <!--Makes Navigation Faster to Same Page-->
+                <a href="about.html">About</a>
             </nav>
         </header>
         <article>
-            <h2 class="header">About Us</h2> <!--About Us Tag (Main Tag)-->
+            <h2 class="header">Find A Vet!</h2> <!--Header Tag for Search Page-->
         </article>
         <footer>
             <p class="footerp">
                 © Michael Castiglia 2019. All Rights Reserved. This site is for the sole use of education (IB MYP Personal Project). <!--Copyright Information-->
             </br>
-                <a href="index.html">Home</a> - <a href="search.html">Search</a> - <a href="#">About</a> <!--Links for Footer (In Case Something Breaks in Header)-->
-                                                                                <!--Makes Navigation Faster to Same Page-->
+                <a href="index.html">Home</a> - <a href="#">Search</a> - <a href="about.html">About</a> <!--Links for Footer (In Case Something Breaks in Header)-->
+                                            <!--Makes Navigation Faster to Same Page-->
             </p>
         </footer>
     </body>
