@@ -1,5 +1,12 @@
 <?php // PHP Scripting (Database Stuff)
-  
+require_once "db.php"; // Gives Connection Information for DB
+
+if(isset($_POST['search'])){ // If There is Anything in the Search Box
+    // PlaceHolder
+    ///
+    /// Will Narrow Down vets in database that show on page to what was typed in the search box.
+    ///
+}
 ?>
 <!DOCTYPE html>
 <html>
