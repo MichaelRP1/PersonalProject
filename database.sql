@@ -1,29 +1,48 @@
--- Sets Default Database Values
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "-04:00";
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               10.1.40-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Version:             10.2.0.5599
+-- --------------------------------------------------------
 
--- FindAVet SQL
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
-CREATE DATABASE IF NOT EXISTS `findavet` DEFAULT CHARACTER SET utf8mb4;
+
+-- Dumping database structure for findavet
+CREATE DATABASE IF NOT EXISTS `findavet` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `findavet`;
 
--- Database for Vets (search.php)
-CREATE TABLE IF NOT EXISTS `vets` (
-    `id` INT NOT NULL AUTO_INCREMENT, -- Creates Unique Row for Each Vet
-    `name` VARCHAR(255) NOT NULL, -- Name of Vet
-    `doctor` VARCHAR(255) NOT NULL, -- Practicing Doctor at Office
-    `address` VARCHAR(255) NOT NULL, -- Address of Office, Possible Link to Google Maps (GMaps API)
-    `phone` VARCHAR(13) NOT NULL, -- Phone Number of Office
-
-    PRIMARY KEY (`id`) -- Sets the Auto-Incremented ID as Unique Primary Key
-)
-
--- User Table (if Eventually Needed)
+-- Dumping structure for table findavet.users
 CREATE TABLE IF NOT EXISTS `users` (
-    `uid` INT NOT NULL AUTO_INCREMENT, -- Creates Unique Row for Each User
-    `username` VARCHAR(50) NOT NULL, -- Username for User
-    `password` VARCHAR(255) NOT NULL, -- User's Password (Hashed)
-    `admin` TINYINT(1) NOT NULL, -- Admin (1) or Not Admin (0)
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `admin` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-    PRIMARY KEY (`uid`)-- Sets the Auto-Incremented ID as Unique Primary Key
-)
+-- Dumping data for table findavet.users: ~0 rows (approximately)
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+
+-- Dumping structure for table findavet.vets
+CREATE TABLE IF NOT EXISTS `vets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `doctor` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `phone` varchar(13) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Dumping data for table findavet.vets: ~0 rows (approximately)
+/*!40000 ALTER TABLE `vets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `vets` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
