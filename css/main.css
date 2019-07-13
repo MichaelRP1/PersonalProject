@@ -118,3 +118,6 @@ article {
 .header {
     text-align: center; /* Centers Headers */
 }
+article p {
+    font-size: 14px; /* Sets Font Size */
+}
