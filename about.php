@@ -35,6 +35,7 @@
         </header>
         <article>
             <h2 class="header">About Us</h2> <!--About Us Tag (Main Tag)-->
+            <p>Placeholder</p> <!-- About Us Content -->
         </article>
         <footer>
             <p class="footerp">
