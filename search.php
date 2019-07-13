@@ -43,6 +43,16 @@ if(isset($_POST['search'])){ // If There is Anything in the Search Box
         </header>
         <article>
             <h2 class="header">Find A Vet!</h2> <!--Header Tag for Search Page-->
+            <table> <!-- Table for Search Function -->
+                <tr> <!-- Header Row -->
+                    <th>Practice Name</th>
+                    <th>Doctor Name</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                </tr>
+                <tr> <!-- Data Rows -->
+                </tr>
+            </table>
         </article>
         <footer>
             <p class="footerp">
