@@ -44,8 +44,8 @@ if(isset($_POST['search'])){ // If There is Anything in the Search Box
         <article>
             <h2 class="header">Find A Vet!</h2> <!--Header Tag for Search Page-->
             <form action="search.php" method="post"> <!-- Creates Search Form -->
-                <input type="text" placeholder="Search" id="search"> <!-- Textbox for Search -->
-                <input type="submit" value="Submit" id="submit"> <!-- Submit Button -->
+                <input type="text" placeholder="Search" id="search" class="formt"> <!-- Textbox for Search -->
+                <input type="submit" value="Submit" id="submit" class="formb"> <!-- Submit Button -->
             </form>
             <table> <!-- Table for Search Function -->
                 <tr> <!-- Header Row -->
