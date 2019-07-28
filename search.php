@@ -2,10 +2,15 @@
 require_once "db.php"; // Gives Connection Information for DB
 
 if(isset($_POST['search'])){ // If There is Anything in the Search Box
-    // PlaceHolder
-    ///
-    /// Will Narrow Down vets in database that show on page to what was typed in the search box.
-    ///
+    $searchValue = $_POST['searchValue'];
+    $query = "SELECT * FROM vets WHERE CONCAT('name', 'doctor') LIKE '%".$searchValue."%'";
+
+    $search_result = mysqli_query($conn, $query);
+}
+else {
+    $query = "SELECT * FROM vets";
+
+    $search_result = mysqli_query($conn, $query);
 }
 ?>
 <!DOCTYPE html>
@@ -43,8 +48,8 @@ if(isset($_POST['search'])){ // If There is Anything in the Search Box
         </header>
         <article>
             <h2 class="header">Find A Vet!</h2> <!--Header Tag for Search Page-->
-            <form action="search.php" method="post"> <!-- Creates Search Form -->
-                <input type="text" placeholder="Search" id="search" class="formt"> <!-- Textbox for Search -->
+            <form action="search.php" method="post" id="search"> <!-- Creates Search Form -->
+                <input type="text" placeholder="Search" id="searchValue" class="formt"> <!-- Textbox for Search -->
                 <input type="submit" value="Submit" id="submit" class="formb"> <!-- Submit Button -->
             </form>
             <table> <!-- Table for Search Function -->
