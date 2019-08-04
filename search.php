@@ -59,8 +59,14 @@ else { // If nothing in search box
                     <th>Phone Number</th>
                     <th>Address</th>
                 </tr>
+                <?php while($row = mysqli_fetch_array($search_result)):?> <!-- Provides results from database -->
                 <tr> <!-- Data Rows -->
+                <td><?php echo $row['name'];?></td> <!-- Get all results for practice name and put them in the table -->
+                <td><?php echo $row['doctor'];?></td> <!-- Get all results for doctor's name and put them in the table -->
+                <td><?php echo $row['phone'];?></td> <!-- Get all results for phone number and put them in the table -->
+                <td><?php echo $row['address'];?></td> <!-- Get all results for address and put them in the table -->
                 </tr>
+                <?php endwhile;?>
             </table>
         </article>
         <footer>
