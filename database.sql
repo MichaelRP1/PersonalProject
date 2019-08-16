@@ -12,8 +12,18 @@ CREATE TABLE IF NOT EXISTS `users` (
 CREATE TABLE IF NOT EXISTS `vets` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
+  `namemaps` varchar(255) NOT NULL,
+  `placeid` varchar(255) NOT NULL,
   `doctor` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
   `phone` varchar(13) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/* To Insert Vet (Row) into database
+
+USE `cronhxtd_findavet`
+INSERT INTO `vets` (name, namemaps, placeid, doctor, address, phone)
+VALUES ('', '', '', '', '', '');
+
+*/
