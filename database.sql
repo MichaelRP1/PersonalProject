@@ -22,7 +22,6 @@ CREATE TABLE IF NOT EXISTS `vets` (
 
 /* To Insert Vet (Row) into database
 
-USE `cronhxtd_findavet`
 INSERT INTO `vets` (name, namemaps, placeid, doctor, address, phone)
 VALUES ('', '', '', '', '', '');
 
