@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS `findavet`;
-USE `findavet`;
+CREATE DATABASE IF NOT EXISTS `cronhxtd_findavet`;
+USE `cronhxtd_findavet`;
 
 CREATE TABLE IF NOT EXISTS `users` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
