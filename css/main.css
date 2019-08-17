@@ -149,5 +149,5 @@ td a {
 	color: #000; /* Makes Links Black */
 }
 td a:hover {
-	color: #f2f2f2; /* Make link slightly lighter when hovering */
+	color: rgb(47, 47, 47); /* Make link slightly lighter when hovering */
 }
