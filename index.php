@@ -29,8 +29,8 @@
             <nav>
                 <!--Actual Links for Navigation-->
                 <a href="#">Home</a> <!--Makes Navigation Faster to Same Page-->
-                <a href="search.html">Search</a>
-                <a href="about.html">About</a>
+                <a href="search.php">Search</a>
+                <a href="about.php">About</a>
             </nav>
         </header>
         <article>
@@ -40,7 +40,7 @@
             <p class="footerp">
                 © Michael Castiglia 2019. All Rights Reserved. This site is for the sole use of education (IB MYP Personal Project). <!--Copyright Information-->
             </br>
-                <a href="#">Home</a> - <a href="search.html">Search</a> - <a href="about.html">About</a> <!--Links for Footer (In Case Something Breaks in Header)-->
+                <a href="#">Home</a> - <a href="search.php">Search</a> - <a href="about.php">About</a> <!--Links for Footer (In Case Something Breaks in Header)-->
                 <!--Makes Navigation Faster to Same Page-->
             </p>
         </footer>

@@ -41,9 +41,9 @@ else { // If nothing in search box
             <input type="checkbox" id="menu"> <!--Hamburger menu button for mobile (used only for css)-->
             <nav>
                 <!--Actual Links for Navigation-->
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
                 <a href="#">Search</a> <!--Makes Navigation Faster to Same Page-->
-                <a href="about.html">About</a>
+                <a href="about.php">About</a>
             </nav>
         </header>
         <article>
@@ -73,7 +73,7 @@ else { // If nothing in search box
             <p class="footerp">
                 © Michael Castiglia 2019. All Rights Reserved. This site is for the sole use of education (IB MYP Personal Project). <!--Copyright Information-->
             </br>
-                <a href="index.html">Home</a> - <a href="#">Search</a> - <a href="about.html">About</a> <!--Links for Footer (In Case Something Breaks in Header)-->
+                <a href="index.php">Home</a> - <a href="#">Search</a> - <a href="about.php">About</a> <!--Links for Footer (In Case Something Breaks in Header)-->
                                             <!--Makes Navigation Faster to Same Page-->
             </p>
         </footer>
