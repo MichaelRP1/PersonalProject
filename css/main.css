@@ -121,9 +121,6 @@ article {
 article p {
     font-size: 14px; /* Sets Font Size */
 }
-form {
-    width: 90%; /* Sets width of Form to 90% of parent */
-}
 .formt { /* Styles Form Text */
     font-size: 16px; /* Sets Font Size */
     border-radius: 10px; /* Rounded Corners */
