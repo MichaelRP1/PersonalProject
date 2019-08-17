@@ -140,5 +140,7 @@ form {
 .searchtable {
 	border-collapse: collapse; /* Sets Border to he 1 line */
 	border: 1 px solid black; /* Sets border */
+	margin-left:auto; /* Automatically sets the left margin */
+    margin-right:auto; /* Automatically sets the left margin */
 	text-align: center; /* Sets text to align to the center of the screen */
 }
