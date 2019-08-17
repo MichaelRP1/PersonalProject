@@ -71,7 +71,7 @@ else { // If nothing in search box
         </article>
         <footer>
             <p class="footerp">
-                © Michael Castiglia 2019. All Rights Reserved. This site is for the sole use of education (IB MYP Personal Project). <!--Copyright Information-->
+                © Michael Castiglia 2019. All Rights Reserved. This site is for the sole use of education (IB MYP Personal Project). Google Maps is a Registered Trademark of Google, Inc. Used under fair use for the purposes of education. <!--Copyright Information-->
             </br>
                 <a href="index.php">Home</a> - <a href="#">Search</a> - <a href="about.php">About</a> <!--Links for Footer (In Case Something Breaks in Header)-->
                                             <!--Makes Navigation Faster to Same Page-->
