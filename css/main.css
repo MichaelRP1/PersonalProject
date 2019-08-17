@@ -121,6 +121,9 @@ article {
 article p {
     font-size: 14px; /* Sets Font Size */
 }
+form {
+    padding-bottom: 5px; /* Adds space below search form */
+}
 .formt { /* Styles Form Text */
     font-size: 16px; /* Sets Font Size */
     border-radius: 10px; /* Rounded Corners */
@@ -135,8 +138,8 @@ article p {
 }
 
 .searchtable {
+	border: 1px solid black; /* Sets border */
 	border-collapse: collapse; /* Sets Border to he 1 line */
-	border: 1 px solid black; /* Sets border */
 	margin-left:auto; /* Automatically sets the left margin */
     margin-right:auto; /* Automatically sets the left margin */
 	text-align: center; /* Sets text to align to the center of the screen */
