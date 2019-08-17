@@ -64,7 +64,7 @@ else { // If nothing in search box
                 <td><?php echo $row['name'];?></td> <!-- Get all results for practice name and put them in the table -->
                 <td><?php echo $row['doctor'];?></td> <!-- Get all results for doctor's name and put them in the table -->
                 <td><a href="tel:<?php echo $row['phone'];?>"><?php echo $row['phone'];?></a></td> <!-- Get all results for phone number and put them in the table -->
-                <td><a href="https://www.google.com/maps/search/?api=1&query=<?php echo $row['namemaps'];?>&query_place_id=<?php echo $row['placeid'];?>"><?php echo $row['address'];?></a></td> <!-- Get all results for address and put them in the table -->
+                <td><a href="https://www.google.com/maps/search/?api=1&query=<?php echo $row['namemaps'];?>&query_place_id=<?php echo $row['placeid'];?>" target="_blank"><?php echo $row['address'];?></a></td> <!-- Get all results for address and put them in the table -->
                 </tr>
                 <?php endwhile;?>
             </table>
