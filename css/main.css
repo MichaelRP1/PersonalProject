@@ -136,11 +136,12 @@ form {
     background: #fff; /* White background color */
     border-color: gray; /* Gray border */
 }
-
 .searchtable {
-	border: 1px solid black; /* Sets border */
 	border-collapse: collapse; /* Sets Border to he 1 line */
 	margin-left:auto; /* Automatically sets the left margin */
     margin-right:auto; /* Automatically sets the left margin */
 	text-align: center; /* Sets text to align to the center of the screen */
+}
+table, th, td {
+	border: 1px solid black; /* Sets border around each cell */
 }
