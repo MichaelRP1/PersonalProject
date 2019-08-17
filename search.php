@@ -52,7 +52,7 @@ else { // If nothing in search box
                 <input type="text" placeholder="Search" id="searchValue" class="formt"> <!-- Textbox for Search -->
                 <input type="submit" value="Submit" id="submit" class="formb"> <!-- Submit Button -->
             </form>
-            <table> <!-- Table for Search Function -->
+            <table class="searchtable"> <!-- Table for Search Function -->
                 <tr> <!-- Header Row -->
                     <th>Practice Name</th>
                     <th>Doctor Name</th>

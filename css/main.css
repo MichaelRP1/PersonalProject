@@ -113,7 +113,7 @@ footer {
 }
 article {
     font-family: 'Work Sans', sans-serif; /* Sets font type for entire content section */
-    text-align: justify; /* Allows text to fill the entire width of the screen */
+    text-align: center; /* Allows text to move to the center of the screen */
 }
 .header {
     text-align: center; /* Centers Headers */
@@ -135,4 +135,10 @@ form {
     border-radius: 10px; /* Rounded Corners */
     background: #fff; /* White background color */
     border-color: gray; /* Gray border */
+}
+
+.searchtable {
+	border-collapse: collapse; /* Sets Border to he 1 line */
+	border: 1 px solid black; /* Sets border */
+	text-align: center; /* Sets text to align to the center of the screen */
 }
