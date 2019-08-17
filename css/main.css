@@ -145,3 +145,9 @@ form {
 table, th, td {
 	border: 1px solid black; /* Sets border around each cell */
 }
+td a {
+	color: #000; /* Makes Links Black */
+}
+td a:hover {
+	color: #f2f2f2; /* Make link slightly lighter when hovering */
+}
