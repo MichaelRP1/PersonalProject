@@ -1,4 +1,6 @@
 <?php // PHP Scripting (Database Stuff)
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
 require_once "db.php"; // Gives Connection Information for DB
 
 if(isset($_POST['search'])){ // If There is Anything in the Search Box

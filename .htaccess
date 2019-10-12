@@ -1,3 +1,0 @@
-<IfModule mod_headers.c>
-  Header set Content-Security-Policy "upgrade-insecure-requests" env=HTTPS
-</IfModule>
