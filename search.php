@@ -84,6 +84,3 @@ else { // If nothing in search box
         </footer>
     </body>
 </html>
-<?php
-$query->close();
-$conn->close();
