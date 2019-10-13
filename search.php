@@ -9,7 +9,8 @@ if(isset($_POST['search'])){ // If There is Anything in the Search Box
 	$query->bind_param('s', $searchValue);
 	
 	$query->execute();
-	$search_result = $query->get_result();
+	$query->bind_result($search_result);
+	$query->fetch();
 }
 else { // If nothing in search box
     $query = "SELECT * FROM vets"; // If nothing in search box, show all vets
@@ -83,3 +84,6 @@ else { // If nothing in search box
         </footer>
     </body>
 </html>
+<?php
+$query->close();
+$conn->close();
