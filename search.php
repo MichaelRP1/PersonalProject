@@ -5,10 +5,11 @@ require_once "db.php"; // Gives Connection Information for DB
 
 if(isset($_POST['search'])){ // If There is Anything in the Search Box
     $searchValue = $_POST['searchValue']; // Gets Search Value from Search Box
-    $query = prepare("SELECT * FROM vets WHERE CONCAT('name', 'doctor') LIKE '%?%'"); // SQL Query to Only show listings that were searched for
+    $query = $conn->prepare("SELECT * FROM vets WHERE CONCAT('name', 'doctor') LIKE '%?%'"); // SQL Query to Only show listings that were searched for
 	$query->bind_param('s', $searchValue);
-
-    $search_result = mysqli_query($conn, $query); // Run query on database
+	
+	$query->execute();
+	$search_result = $query->get_result();
 }
 else { // If nothing in search box
     $query = "SELECT * FROM vets"; // If nothing in search box, show all vets
