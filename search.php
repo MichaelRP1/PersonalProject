@@ -3,7 +3,7 @@ ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 require_once "db.php"; // Gives Connection Information for DB
 
-if(isset($_POST['search'])){ // If There is Anything in the Search Box
+if(isset($_POST['searchValue'])){ // If There is Anything in the Search Box
     $searchValue = $_POST['searchValue']; // Gets Search Value from Search Box
     $query = $conn->prepare("SELECT * FROM vets WHERE CONCAT('name', 'doctor') LIKE '%?%'"); // SQL Query to Only show listings that were searched for
 	$query->bind_param('s', $searchValue);
