@@ -15,7 +15,7 @@ if(isset($_POST['search'])){ // If There is Anything in the Search Box
 else { // If nothing in search box
     $query = "SELECT * FROM vets"; // If nothing in search box, show all vets
 
-    $search_result = mysqli_query($conn, $query); // Run query on database
+    $search_result = $conn->query($query); // Run query on database
 }
 ?>
 <!DOCTYPE html>
