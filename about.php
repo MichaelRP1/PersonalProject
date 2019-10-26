@@ -34,8 +34,10 @@
             </nav>
         </header>
         <article>
-            <h2 class="header">About Us</h2> <!--About Us Tag (Main Tag)-->
-            <p>Placeholder</p> <!-- About Us Content -->
+            <h2 class="header">About Project</h2> <!--About Us Tag (Main Tag)-->
+            <p>This website is a Personal Project of Michael Castiglia.</p>
+            <p>Michael is a Student who is completing the required MYP Personal Project.</p>
+            <p>Michael has decided to make it about coding in PHP, HTML, and CSS.</p> <!-- About Us Content -->
         </article>
         <footer>
             <p class="footerp">
