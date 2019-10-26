@@ -20,6 +20,14 @@ CREATE TABLE IF NOT EXISTS `vets` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+DELIMITER //
+CREATE DEFINER=`root`@`localhost` PROCEDURE `search`(IN searchTerm VARCHAR(255))
+BEGIN
+	PREPARE searchTerm;
+	SELECT * FROM vets WHERE name LIKE %searchTerm%;
+END //
+DELIMITER;
+
 /* To Insert Vet (Row) into database
 
 INSERT INTO `vets` (name, namemaps, placeid, doctor, address, phone)
