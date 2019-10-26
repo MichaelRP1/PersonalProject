@@ -25,8 +25,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `search`(IN searchTerm VARCHAR(255))
 BEGIN
 	PREPARE searchTerm;
 	SELECT * FROM vets WHERE name LIKE %searchTerm%;
-END //
-DELIMITER;
+END//
 
 /* To Insert Vet (Row) into database
 
