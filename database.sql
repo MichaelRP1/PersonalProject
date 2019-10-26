@@ -21,10 +21,11 @@ CREATE TABLE IF NOT EXISTS `vets` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 DELIMITER //
-CREATE DEFINER=`root`@`localhost` PROCEDURE `search`(IN searchTerm VARCHAR(255))
+CREATE DEFINER=`cronhxtd_findavet`@`localhost` PROCEDURE `search`(IN searchTerm VARCHAR(255))
 BEGIN
-	PREPARE searchTerm;
-	SELECT * FROM vets WHERE name LIKE %searchTerm%;
+  SET @search = searchTerm;
+	PREPARE stmt FROM @search;
+	SELECT * FROM vets WHERE name LIKE CONCAT('%', @search, '%');
 END//
 
 /* To Insert Vet (Row) into database
