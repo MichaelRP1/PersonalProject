@@ -6,7 +6,7 @@ I am a student that is required to participate in the **International Baccalaure
 - Commits (Changes) with Time Stamps
 - Progression Over Time
 - Source Code Repository
-- Maintaining SPART Goals that were set
+- Maintaining SMART Goals that were set
 - And More
 ## Personal Project Final Idea / Proposal **(Approved)**
 - **Idea 4**: Make a website using primarily, or only, HTML, CSS, and PHP
