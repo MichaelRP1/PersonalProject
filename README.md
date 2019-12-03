@@ -15,7 +15,7 @@ Make a website, using primarily HTML 5, CSS 3, and PHP, with advanced tools in H
 ## Personal Project Supervisor
 Will be done through ManageBac for the time being
 ## Link to Website
-Home: https://findavetpbc.host
+Home: https://findavetpbc.host  
 Search: https://findavetpbc.host/search.html
 ## Credit
 None at this time
